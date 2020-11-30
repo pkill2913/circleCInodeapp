@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ checsum "package.json"}}
+          key: v1-dependencies-{{ checksum "package.json"}}
 
       - run: 
           command: npm install
